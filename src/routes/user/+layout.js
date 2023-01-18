@@ -1,8 +1,9 @@
 /** @type {import('./$types').LayoutLoad} */
-export function load() {
+export function load({route}) {
   return {
-    section: [
-      { slug: 'list', title: '환자 리스트'}
-    ]
+    section: {
+      '/user/list': '환자 리스트'
+    },
+    route: route.id
   }
 }

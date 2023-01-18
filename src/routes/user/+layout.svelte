@@ -3,8 +3,7 @@
   export let data;
 </script>
 
-<h1>Title</h1>
-<p>{data.section[0].title}</p>
+<h1 class="font-bold">== {data.section[data.route]} ==</h1>
 
 <main>
   <slot></slot>
